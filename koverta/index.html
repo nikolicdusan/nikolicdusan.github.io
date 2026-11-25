@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koverta: envelope budgeting for couples</title>
+<meta name="description" content="Koverta is a simple envelope budget for couples. Give every bit of your income a job, share one budget with your partner, and stay in sync through iCloud.">
+<link rel="icon" href="icon.png">
+<meta property="og:title" content="Koverta: envelope budgeting for couples">
+<meta property="og:description" content="Give every bit of your income a job, and share one budget with your partner.">
+<meta property="og:image" content="https://nikolicdusan.github.io/koverta/icon.png">
+<meta property="og:url" content="https://nikolicdusan.github.io/koverta/">
+<meta name="twitter:card" content="summary">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root {
+    --bg: #faf6f9; --card: #ffffff; --text: #1f1520; --muted: #6b5d6a;
+    --accent: #d6338c; --accent2: #7329a8; --line: #eee3ec; --chip: #fbe8f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #120b13; --card: #1c131d; --text: #f1e8f0; --muted: #a9999f; --accent: #ff73bd; --accent2: #b98cff; --line: #2d212e; --chip: #2a1a29; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 64px; }
+  a { color: var(--accent); }
+
+  .hero { text-align: center; margin-bottom: 48px; }
+  .hero img { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 14px 40px rgba(115, 41, 168, 0.28); }
+  .hero h1 { font-size: 44px; line-height: 1.1; margin: 22px 0 8px; letter-spacing: -0.03em; }
+  .tagline { font-size: 22px; line-height: 1.35; margin: 0 auto 14px; max-width: 520px;
+             background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 600; }
+  .lede { color: var(--muted); max-width: 540px; margin: 0 auto; }
+  .soon { display: inline-block; margin-top: 22px; padding: 8px 16px; border-radius: 999px; background: var(--chip); color: var(--accent); font-weight: 600; font-size: 15px; }
+
+  .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0 0 56px; }
+  @media (max-width: 560px) { .features { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } }
+  .feature { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; }
+  .feature .icon { font-size: 26px; line-height: 1; }
+  .feature h3 { margin: 10px 0 4px; font-size: 18px; letter-spacing: -0.01em; }
+  .feature p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  h2 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .section-lede { color: var(--muted); margin: 0 0 20px; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; margin-bottom: 28px; }
+  .contact p { margin: 0; }
+  .contact a { font-weight: 600; }
+
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 4px 20px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 600; padding: 12px 0; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--accent); font-size: 22px; line-height: 1; }
+  details[open] summary::after { content: "−"; }
+  details p, details ol { margin: 0 0 14px; color: var(--muted); }
+  details li { margin: 4px 0; }
+
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <img src="icon.png" alt="Koverta app icon: a folded paper K">
+    <h1>Koverta</h1>
+    <p class="tagline">Envelope budgeting for couples.</p>
+    <p class="lede">Give every bit of your income a job, share one budget with your partner, and always know what's left to spend. No bank logins, no ads, no tracking.</p>
+    <span class="soon">Coming soon to the App Store</span>
+  </section>
+
+  <section class="features" aria-label="Features">
+    <div class="feature"><div class="icon">✉️</div><h3>Envelopes that make sense</h3><p>Split your income into envelopes like Rent, Groceries and Fun. Spend from them, and see at a glance what's left.</p></div>
+    <div class="feature"><div class="icon">💞</div><h3>One budget, two people</h3><p>Invite your partner and you both see the same budget, updated live on both phones through iCloud.</p></div>
+    <div class="feature"><div class="icon">⚡️</div><h3>Add spending in seconds</h3><p>A quick keypad that remembers your usual places, plus Siri and Shortcuts: “Add an expense in Koverta”.</p></div>
+    <div class="feature"><div class="icon">🌍</div><h3>Multiple currencies</h3><p>Budget in your home currency and still track an account in another one, like savings in euros or dollars. Koverta remembers the rate you used.</p></div>
+    <div class="feature"><div class="icon">🔒</div><h3>Private by design</h3><p>Your budget lives on your devices and in your own iCloud. We never see it.</p></div>
+    <div class="feature"><div class="icon">📤</div><h3>Your data, your way</h3><p>Export every transaction to CSV whenever you like.</p></div>
+  </section>
+
+  <section id="support" aria-labelledby="support-title">
+    <h2 id="support-title">Support</h2>
+    <p class="section-lede">Questions, bugs or ideas? We read every message.</p>
+    <div class="contact"><p>Email <a href="mailto:daftkeed@gmail.com">daftkeed@gmail.com</a>. You'll usually hear back within two working days.</p></div>
+
+    <details>
+      <summary>How do I invite my partner?</summary>
+      <ol>
+        <li>Make sure you're both signed in to iCloud on your iPhones.</li>
+        <li>In Koverta, tap the people icon at the top of the Budget tab.</li>
+        <li>Tap <strong>Invite partner</strong> and send the link however you like.</li>
+        <li>Your partner taps the link and the shared budget opens in Koverta on their phone.</li>
+      </ol>
+      <p>Sharing is part of Koverta Pro. Only the person who invites needs Pro.</p>
+    </details>
+    <details>
+      <summary>My partner's changes don't show up</summary>
+      <p>Check that both phones are online and signed in to iCloud. Then pull down on the Budget screen to refresh. Changes usually appear within a few seconds.</p>
+    </details>
+    <details>
+      <summary>What's free, and what's in Koverta Pro?</summary>
+      <p>Free: a full envelope budget with up to 15 envelopes, transactions, accounts, Siri and CSV export. Pro adds partner sharing, unlimited envelopes and multiple currencies. Pro is available monthly, yearly (with a 14-day free trial) or as a one-time lifetime purchase.</p>
+    </details>
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <p>On your iPhone, open <strong>Settings › your name › Subscriptions</strong>, pick Koverta and tap <strong>Cancel Subscription</strong>. If you cancel during the free trial, you won't be charged.</p>
+    </details>
+    <details>
+      <summary>I bought Pro but it's not active</summary>
+      <p>In Koverta, tap the people icon at the top of the Budget tab, then <strong>Upgrade to Pro</strong>, and choose <strong>Restore purchases</strong> at the bottom. Make sure you're signed in with the same Apple Account you used to buy it.</p>
+    </details>
+    <details>
+      <summary>Does Koverta connect to my bank?</summary>
+      <p>No, on purpose. You enter spending yourself, which takes seconds and keeps you aware of where the money goes. It also means your bank details never leave your bank.</p>
+    </details>
+    <details>
+      <summary>How do I delete my data?</summary>
+      <p>Delete the app to remove data stored on your phone. To remove the iCloud copy, open <strong>Settings › your name › iCloud › Manage Account Storage</strong>, pick Koverta and delete its data.</p>
+    </details>
+  </section>
+
+  <footer>
+    <a href="privacy/">Privacy Policy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
+    <a href="mailto:daftkeed@gmail.com">Contact</a>
+    <span>© 2026 Koverta</span>
+  </footer>
+</main>
+</body>
+</html>
